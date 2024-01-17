@@ -27,7 +27,7 @@ const UserDocumentsBody = () => {
   const [showRoundCard, setShowRoundCard] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const saveDocumentsHeader = document.getElementById(
+      const saveDocumentsHeader:HTMLElement = document.getElementById(
         "saveDocumentsHeader"
       );
       const x = saveDocumentsHeader.getBoundingClientRect().top;

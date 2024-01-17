@@ -27,9 +27,9 @@ const TemplateBody = () => {
   return (
     <div className="bg-violet-100 w-full">
       <div
-        className={`w-2/3 py-10 m-auto ${templateShow ? "block" : "hidden"}`}>
+        className={`w-full md:w-3/4 md:py-10 py-5 m-auto ${templateShow ? "block" : "hidden"}`}>
         {/* upper section template */}
-        <div className="py-3 px-5">
+        <div className="md:py-3 md:px-5 px-3 py-2 font-semibold">
           <div
             className={
               hiddenTempValue
@@ -45,13 +45,13 @@ const TemplateBody = () => {
                 <IoCodeOutline className="ml-2 size-3 rotate-90" />
                 <p className="text-violet-200 text-lg absolute right-0">|</p>
               </button>
-              <DropdownMenu>
+              <DropdownMenu modal={false}>
                 <DropdownMenuTrigger className="hover:bg-violet-200 h-8 w-8 flex justify-center items-center rounded-full">
                   <IoEllipsisVerticalOutline />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuItem
-                    className="!border-1 hover:!bg-red-200"
+                    className="!border-1 hover:!bg-violet-200"
                     onClick={HideTemplateBody}>
                     Hide all templates
                   </DropdownMenuItem>

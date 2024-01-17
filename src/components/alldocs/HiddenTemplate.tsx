@@ -11,7 +11,7 @@ const HiddenTemplate = () => {
   return (
     <div className={hiddenTempValue ? "block" : "hidden "}>
       <div>
-        <div className="text-md py-3 px-5 ">CVs</div>
+        <div className="text-md py-3 px-5 font-semibold">CVs</div>
         <div className="flex flex-wrap">
           {templateDetails[1].map((each, i) => {
             return (
@@ -26,7 +26,7 @@ const HiddenTemplate = () => {
         </div>
       </div>
       <div>
-        <div className="text-md py-3 px-5 ">Letter</div>
+        <div className="text-md py-3 px-5 font-semibold">Letter</div>
         <div className="flex flex-wrap">
           {templateDetails[2].map((each, i) => {
             return (
@@ -41,7 +41,7 @@ const HiddenTemplate = () => {
         </div>
       </div>
       <div>
-        <div className="text-md py-3 px-5">Personal</div>
+        <div className="text-md py-3 px-5 font-semibold">Personal</div>
         <div className="flex flex-wrap">
           {templateDetails[3].map((each, i) => {
             return (
@@ -56,7 +56,7 @@ const HiddenTemplate = () => {
         </div>
       </div>
       <div>
-        <div className="text-md py-3 px-5">Works</div>
+        <div className="text-md py-3 px-5 font-semibold">Works</div>
         <div className="flex flex-wrap">
           {templateDetails[4].map((each, i) => {
             return (
@@ -71,7 +71,7 @@ const HiddenTemplate = () => {
         </div>
       </div>
       <div>
-        <div className="text-md py-3 px-5">Educational</div>
+        <div className="text-md py-3 px-5 font-semibold">Educational</div>
         <div className="flex flex-wrap">
           {templateDetails[5].map((each, i) => {
             return (

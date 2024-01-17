@@ -87,4 +87,13 @@ export const templateDetails = [
     { img: education8img, name: "Lesson plan", subtitile: "Playful" },
     { img: education9img, name: "Lesson plan", subtitile: "Paper back" },
   ],
+  // save documents  just demo
+  [
+    { img: BrochureImg, name: "Brochureszdxfghjhcxfgh", subtitile: "23-06-2023" },
+    { img: ResumeImg, name: "Resvfxghjvbume", subtitile: "06-01-2024" },
+    { img: LetterImg, name: "Letter", subtitile: "19-10-2023" },
+    { img: ProjectImg, name: "Project Proposal", subtitile: "21-01-2024" },
+    { img: ReportImg, name: "Report", subtitile: "01-08-2023" },
+    { img: education7img, name: "Class note", subtitile: "Paper back" },
+  ],
 ];

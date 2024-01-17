@@ -36,9 +36,9 @@ const AllDocHeader = () => {
 
   return (
     <>
-      <header className=" p-4 w-full border-b-2 border-violet-200 h-16">
+      <header className="p-2 md:p-4 w-full  bg-white z-10 h-16 fixed top-0">
         {hiddenTempValue ? (
-          <div className="flex items-center w-full h-full">
+          <div className="flex font-semibold items-center w-full h-full">
             <button
               className="p-2 hover:bg-violet-100 rounded-full relative left-0 mr-3"
               onClick={showMainHeader}>
@@ -51,17 +51,16 @@ const AllDocHeader = () => {
             {/* Logo */}
             <Link to={"/"}>
               <div className="flex items-center">
-                <img src={Logo} className="w-10 h-10" alt="Logo" />
-                <p className="ml-3 text-lg font-semibold">DocFlow</p>
+                <img src={Logo} className="w-8 h-8 md:w-12 md:h-12" alt="Logo" />
               </div>
             </Link>
             {/* // search bar */}
             <div
               className={`flex w-1/2 items-center ${
-                isInputFocused ? "bg-white border-1 shadow-md" : "bg-violet-100"
+                isInputFocused ? "bg-white border shadow-md" : "bg-violet-100"
               } rounded-lg p-1 relative`}>
               <button
-                className={`p-2 ${
+                className={`p-1 md:p-2 ${
                   isInputFocused ? "hover:bg-violet-100" : "hover:bg-violet-200"
                 } rounded-full relative right-0`}>
                 <FaSearch className="size-5 text-violet-500" />
@@ -74,14 +73,14 @@ const AllDocHeader = () => {
                   onChange={handleInputChange}
                   onFocus={handleInputFocus}
                   onBlur={handleInputBlur}
-                  className={`w-full px-4 py-1 ${
+                  className={`w-full px-2 md:px-4 py-1 ${
                     isInputFocused ? "bg-white" : "bg-violet-100"
                   } outline-none border-none`}
                   placeholder="Search..."
                 />
               </div>
               <button
-                className={`p-2 ${
+                className={`p-1 md:p-2 ${
                   isInputFocused ? "hover:bg-violet-100" : "hover:bg-violet-200"
                 } rounded-full relative left-0 ${
                   inputValue ? "block" : "hidden"

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaArrowLeft, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
@@ -10,7 +10,7 @@ const AllDocHeader = () => {
   const [inputValue, setInputValue] = useState("");
   const [isInputFocused, setIsInputFocused] = useState(false);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
 
@@ -24,7 +24,11 @@ const AllDocHeader = () => {
 
   const handleClearInput = () => {
     setInputValue("");
-    document.getElementById("searchInput").focus();
+    const searchInputElement = document.getElementById("searchInput") as HTMLInputElement | null;
+
+    if (searchInputElement) {
+      searchInputElement.focus();
+    }
   };
 
   function showMainHeader() {

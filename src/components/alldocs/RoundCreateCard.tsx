@@ -1,4 +1,3 @@
-import React from "react";
 import roundImg from "../assets/RoundCreate.png";
 
 const RoundCreateCard = () => {

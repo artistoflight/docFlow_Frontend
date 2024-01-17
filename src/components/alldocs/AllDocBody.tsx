@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import TemplateBody from "./Templatebody";
+import TemplateBody from "./TemplateBody";
 import UserDocumentsBody from "./UserDocumentsBody";
 import { HiddenTemplateContext } from "../common/Provider";
 

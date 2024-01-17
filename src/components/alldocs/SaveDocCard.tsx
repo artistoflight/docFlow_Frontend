@@ -19,8 +19,9 @@ import {
 import { IoDocumentText, IoEllipsisVerticalOutline } from "react-icons/io5";
 import { MdDeleteForever, MdDriveFileRenameOutline } from "react-icons/md";
 import { useState } from "react";
+import { SaveDocCardProps } from "./EachDocCard";
 
-const SaveDocCard = ({ ImgC, Name, SubTitle }) => {
+const SaveDocCard = ({ ImgC, Name, SubTitle } : SaveDocCardProps) => {
   const [docName, setDocName] = useState(Name);
   const containerStyles =
     "rounded-t-sm cursor-pointer border border-gray-400 hover:border-violet-500 hover:border-2 overflow-hidden";

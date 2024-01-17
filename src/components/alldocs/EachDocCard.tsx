@@ -1,6 +1,11 @@
-const EachDocCard = ({ ImgC, Name, SubTitle }) => {
-  const containerStyles =
-    " w-full rounded-sm cursor-pointer border border-gray-400 hover:border-violet-500 hover:border-2 overflow-hidden";
+export interface SaveDocCardProps {
+  ImgC: string; // Assuming ImgC is a string, update the type if needed
+  Name: string;
+  SubTitle: string;
+}
+
+const EachDocCard = ({ ImgC, Name, SubTitle } : SaveDocCardProps) => {
+  const containerStyles = "w-full rounded-sm cursor-pointer border border-gray-400 hover:border-violet-500 hover:border-2 overflow-hidden";
   return (
     <div className="w-1/3 md:w-1/6">
       <div className="w-4/5 mx-auto">

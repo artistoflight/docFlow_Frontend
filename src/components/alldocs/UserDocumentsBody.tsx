@@ -25,11 +25,12 @@ import RoundCreateCard from "./RoundCreateCard";
 const UserDocumentsBody = () => {
   const [stickyVal, setStickyVal] = useState(false);
   const [showRoundCard, setShowRoundCard] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const saveDocumentsHeader:HTMLElement = document.getElementById(
         "saveDocumentsHeader"
-      );
+      )!;
       const x = saveDocumentsHeader.getBoundingClientRect().top;
 
       if (x <= 56) {

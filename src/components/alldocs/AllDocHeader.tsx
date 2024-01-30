@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { FaArrowLeft, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
 import Profile from "../common/Profile";
 import { HiddenTemplateContext } from "../common/Provider";
 import { RxCross1 } from "react-icons/rx";

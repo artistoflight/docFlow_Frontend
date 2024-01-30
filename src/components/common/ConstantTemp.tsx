@@ -1,43 +1,43 @@
 // Template 1
-import CreateImg from "../assets/Create.png";
-import BrochureImg from "../assets/Brochure.png";
-import LetterImg from "../assets/Letter.png";
-import ProjectImg from "../assets/Project.png";
-import ReportImg from "../assets/Report.png";
-import ResumeImg from "../assets/Resume.png";
+import CreateImg from "../../assets/Create.png";
+import BrochureImg from "../../assets/Brochure.png";
+import LetterImg from "../../assets/Letter.png";
+import ProjectImg from "../../assets/Project.png";
+import ReportImg from "../../assets/Report.png";
+import ResumeImg from "../../assets/Resume.png";
 // CV Images
-import cv1img from "../assets/cvTemps/cv1.png";
-import cv2img from "../assets/cvTemps/cv2.png";
-import cv3img from "../assets/cvTemps/cv3.png";
-import cv4img from "../assets/cvTemps/cv4.png";
-import cv5img from "../assets/cvTemps/cv5.png";
+import cv1img from "../../assets/cvTemps/cv1.png";
+import cv2img from "../../assets/cvTemps/cv2.png";
+import cv3img from "../../assets/cvTemps/cv3.png";
+import cv4img from "../../assets/cvTemps/cv4.png";
+import cv5img from "../../assets/cvTemps/cv5.png";
 // Letter Images
-import letter1img from "../assets/letterTemps/letter1.png";
-import letter2img from "../assets/letterTemps/letter2.png";
-import letter3img from "../assets/letterTemps/letter3.png";
-import letter4img from "../assets/letterTemps/letter4.png";
+import letter1img from "../../assets/letterTemps/letter1.png";
+import letter2img from "../../assets/letterTemps/letter2.png";
+import letter3img from "../../assets/letterTemps/letter3.png";
+import letter4img from "../../assets/letterTemps/letter4.png";
 // Personal Images
-import personal1img from "../assets/personalTemps/personal1.png";
-import personal2img from "../assets/personalTemps/personal2.png";
+import personal1img from "../../assets/personalTemps/personal1.png";
+import personal2img from "../../assets/personalTemps/personal2.png";
 // workTemps Images
-import work1img from "../assets/workTemps/work1.png";
-import work2img from "../assets/workTemps/work2.png";
-import work3img from "../assets/workTemps/work3.png";
-import work4img from "../assets/workTemps/work4.png";
-import work5img from "../assets/workTemps/work5.png";
-import work6img from "../assets/workTemps/work6.png";
-import work7img from "../assets/workTemps/work7.png";
-import work8img from "../assets/workTemps/work8.png";
+import work1img from "../../assets/workTemps/work1.png";
+import work2img from "../../assets/workTemps/work2.png";
+import work3img from "../../assets/workTemps/work3.png";
+import work4img from "../../assets/workTemps/work4.png";
+import work5img from "../../assets/workTemps/work5.png";
+import work6img from "../../assets/workTemps/work6.png";
+import work7img from "../../assets/workTemps/work7.png";
+import work8img from "../../assets/workTemps/work8.png";
 // educational Images
-import education1img from "../assets/educationTemps/education1.png";
-import education2img from "../assets/educationTemps/education2.png";
-import education3img from "../assets/educationTemps/education3.png";
-import education4img from "../assets/educationTemps/education4.png";
-import education5img from "../assets/educationTemps/education5.png";
-import education6img from "../assets/educationTemps/education6.png";
-import education7img from "../assets/educationTemps/education7.png";
-import education8img from "../assets/educationTemps/education8.png";
-import education9img from "../assets/educationTemps/education9.png";
+import education1img from "../../assets/educationTemps/education1.png";
+import education2img from "../../assets/educationTemps/education2.png";
+import education3img from "../../assets/educationTemps/education3.png";
+import education4img from "../../assets/educationTemps/education4.png";
+import education5img from "../../assets/educationTemps/education5.png";
+import education6img from "../../assets/educationTemps/education6.png";
+import education7img from "../../assets/educationTemps/education7.png";
+import education8img from "../../assets/educationTemps/education8.png";
+import education9img from "../../assets/educationTemps/education9.png";
 //
 export const templateDetails = [
   [

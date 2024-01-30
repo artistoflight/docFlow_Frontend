@@ -10,14 +10,14 @@ type Props = {
 }
 
 export type IContextType = {
-  hiddenTempValue: Boolean
-  setHiddenTempValue: React.Dispatch<React.SetStateAction<Boolean>>
+  hiddenTempValue: boolean
+  setHiddenTempValue: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const HiddenTemplateContext = createContext<IContextType>(INITIAL_STATE);
 
 const Provider = ({ children } : Props) => {
-  const [hiddenTempValue, setHiddenTempValue] = useState<Boolean>(false);
+  const [hiddenTempValue, setHiddenTempValue] = useState<boolean>(false);
   
   return (
     <HiddenTemplateContext.Provider value={{hiddenTempValue, setHiddenTempValue}}>

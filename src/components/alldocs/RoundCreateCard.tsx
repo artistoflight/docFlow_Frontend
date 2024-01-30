@@ -1,4 +1,4 @@
-import roundImg from "../assets/RoundCreate.png";
+import roundImg from "../../assets/RoundCreate.png";
 
 const RoundCreateCard = () => {
   return (

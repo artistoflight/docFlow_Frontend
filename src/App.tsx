@@ -5,7 +5,7 @@ import ErrorPage from "./components/common/ErrorPage";
 
 const App = () => {
   return (
-    <main className="flex h-screen !overflow-y-scroll">
+    <main>
       <Outlet />
     </main>
   );

@@ -10,6 +10,17 @@ import {
 import { CiLogin } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { IoDocumentTextOutline, IoSettingsOutline } from "react-icons/io5";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "../ui/alert-dialog";
 
 const Profile = () => {
   return (
@@ -36,9 +47,29 @@ const Profile = () => {
             Settings
           </DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem className="hover:!bg-red-700 hover:!text-white flex items-center">
-            <CiLogin className="size-5 mr-4" /> Log Out
-          </DropdownMenuItem>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <DropdownMenuItem
+                onSelect={(e) => e.preventDefault()}
+                className="hover:!bg-violet-800 hover:font-bold hover:!text-white flex items-center">
+                <CiLogin className="size-5 mr-4" /> Log Out
+              </DropdownMenuItem>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Log Out</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Are you sure you want to log out ?
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel className="hover:text-gray-800 hover:border-violet-500 text-violet-800">
+                  Cancel
+                </AlertDialogCancel>
+                <AlertDialogAction>Log Out</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

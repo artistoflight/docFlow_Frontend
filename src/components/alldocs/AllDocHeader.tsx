@@ -1,10 +1,9 @@
 import React, { useContext, useState } from "react";
 import { FaArrowLeft, FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.png";
 import Profile from "../common/Profile";
 import { HiddenTemplateContext } from "../common/Provider";
 import { RxCross1 } from "react-icons/rx";
+import LogoPage from "../common/LogoPage";
 
 const AllDocHeader = () => {
   const [inputValue, setInputValue] = useState("");
@@ -24,7 +23,9 @@ const AllDocHeader = () => {
 
   const handleClearInput = () => {
     setInputValue("");
-    const searchInputElement = document.getElementById("searchInput") as HTMLInputElement | null;
+    const searchInputElement = document.getElementById(
+      "searchInput"
+    ) as HTMLInputElement | null;
 
     if (searchInputElement) {
       searchInputElement.focus();
@@ -53,11 +54,7 @@ const AllDocHeader = () => {
         ) : (
           <div className="flex items-center justify-between w-full h-full">
             {/* Logo */}
-            <Link to={"/"}>
-              <div className="flex items-center">
-                <img src={Logo} className="w-8 h-8 md:w-12 md:h-12" alt="Logo" />
-              </div>
-            </Link>
+            <LogoPage />
             {/* // search bar */}
             <div
               className={`flex w-1/2 items-center ${

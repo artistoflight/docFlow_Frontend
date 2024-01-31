@@ -21,6 +21,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "../ui/alert-dialog";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -35,13 +36,17 @@ const Profile = () => {
         <DropdownMenuContent>
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuItem className="flex items-center">
-            <CgProfile className="size-5 mr-2 " />
-            Profile
-          </DropdownMenuItem>
-          <DropdownMenuItem className="flex items-center">
-            <IoDocumentTextOutline className="size-5 mr-2" /> All Documents
-          </DropdownMenuItem>
+          <Link to={"/profile"}>
+            <DropdownMenuItem className="flex items-center">
+              <CgProfile className="size-5 mr-2 " />
+              Profile
+            </DropdownMenuItem>
+          </Link>
+          <Link to={"/"}>
+            <DropdownMenuItem className="flex items-center">
+              <IoDocumentTextOutline className="size-5 mr-2" /> All Documents
+            </DropdownMenuItem>
+          </Link>
           <DropdownMenuItem className="flex items-center">
             <IoSettingsOutline className="size-5 mr-2" />
             Settings
@@ -51,7 +56,7 @@ const Profile = () => {
             <AlertDialogTrigger asChild>
               <DropdownMenuItem
                 onSelect={(e) => e.preventDefault()}
-                className="hover:!bg-violet-800 hover:font-bold hover:!text-white flex items-center">
+                className="hover:!bg-violet-700 hover:font-bold hover:!text-white flex items-center">
                 <CiLogin className="size-5 mr-4" /> Log Out
               </DropdownMenuItem>
             </AlertDialogTrigger>

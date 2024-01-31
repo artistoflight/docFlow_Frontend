@@ -6,8 +6,8 @@ const ErrorPage = () => {
 
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-violet-100 flex-col">
-      <div className="w-5/6">
-        <img src={errorPage} alt="error page pic" className="m-auto" />
+      <div className="w-5/6 h-1/2">
+        <img src={errorPage} alt="error page pic" className=" h-full mx-auto object-contain" />
       </div>
       <div className="w-5/6 text-center">
         <h1 className="md:text-3xl text-2xl md:tracking-[0.5rem]  font-extrabold text-violet-700 mx-auto my-5 md:my-10">

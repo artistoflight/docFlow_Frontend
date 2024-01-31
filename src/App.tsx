@@ -2,6 +2,7 @@ import { Outlet, createBrowserRouter } from "react-router-dom";
 import "./globals.css";
 import AllDocs from "./components/alldocs/AllDocs";
 import ErrorPage from "./components/common/ErrorPage";
+import ProfileSetting from "./components/common/ProfileSetting";
 
 const App = () => {
   return (
@@ -20,6 +21,10 @@ export const routerPage = createBrowserRouter([
       {
         path: "/",
         element: <AllDocs />,
+      },
+      {
+        path: "/profile",
+        element: <ProfileSetting />,
       },
     ],
   },

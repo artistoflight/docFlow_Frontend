@@ -25,7 +25,7 @@ const TemplateBody = () => {
   );
   // Step 2: Wrap the component with the context provider
   return (
-    <div className="bg-violet-100 w-full">
+    <div className="bg-violet-100">
       <div
         className={`w-full md:w-3/4 md:py-10 py-5 m-auto ${templateShow ? "block" : "hidden"}`}>
         {/* upper section template */}

@@ -14,14 +14,15 @@ import { Button } from "../ui/button";
 
 const ProfileSetting = () => {
   // for Image input
-  const inputRef = useRef(null);
-  const [image, setImage] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [image, setImage] = useState<File | null>(null);
 
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    setImage(file);
+  const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if(!event.target.files) return;
+    setImage(event.target.files[0]);
   };
   const handleUploadClick = () => {
+    if(!inputRef.current) return;
     inputRef.current.click();
   };
 
@@ -29,7 +30,7 @@ const ProfileSetting = () => {
   const [nameValue, setNameValue] = useState("Guest Roy");
   const [isValidName, setIsValidName] = useState(true);
 
-  const handleNameChange = (event) => {
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNameValue(event.target.value);
     const isValid = /^[A-Za-z\s]+$/.test(event.target.value);
     setIsValidName(isValid);
@@ -39,7 +40,7 @@ const ProfileSetting = () => {
   const [emailValue, setEmailValue] = useState("guestroy@email.com");
   const [isValidEmail, setIsValidEmail] = useState(true);
 
-  const handleEmailChange = (event) => {
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmailValue(event.target.value);
     const isValid =
       /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(
@@ -69,7 +70,7 @@ const ProfileSetting = () => {
               <div className="h-16 w-16 rounded-full overflow-hidden bg-white">
                 {image ? (
                   <img
-                    src={URL.createObjectURL(image)}
+                    src={typeof image === 'string' ? image : URL.createObjectURL(image)}
                     alt="upload image"
                     className="object-cover"
                   />

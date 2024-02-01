@@ -1,8 +1,13 @@
 import { Link, useRouteError } from "react-router-dom";
 import errorPage from "../../assets/errorPage.png";
 
+type errType = {
+  status: number,
+  statusText: string
+}
+
 const ErrorPage = () => {
-  const error = useRouteError();
+  const error: errType = useRouteError() as errType;
 
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-violet-100 flex-col">

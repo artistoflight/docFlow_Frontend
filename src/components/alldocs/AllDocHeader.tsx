@@ -41,7 +41,7 @@ const AllDocHeader = () => {
 
   return (
     <>
-      <header className="p-2 md:p-4 w-full  bg-white z-10 h-16 fixed top-0">
+      <header className="p-2 md:p-4 w-full  bg-white z-10 h-16 sticky top-0">
         {hiddenTempValue ? (
           <div className="flex font-semibold items-center w-full h-full">
             <button

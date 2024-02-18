@@ -6,7 +6,7 @@ import { HiddenTemplateContext } from "../common/Provider";
 const AllDocBody = () => {
   const { hiddenTempValue } = useContext(HiddenTemplateContext);
   return (
-    <div className="relative bg-white ">
+    <div className=" bg-white ">
       <TemplateBody />
       {hiddenTempValue ? null : <UserDocumentsBody />}
     </div>

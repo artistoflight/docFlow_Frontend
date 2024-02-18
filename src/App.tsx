@@ -3,6 +3,7 @@ import "./globals.css";
 import AllDocs from "./components/alldocs/AllDocs";
 import ErrorPage from "./components/common/ErrorPage";
 import ProfileSetting from "./components/common/ProfileSetting";
+import Editor from "./components/createdoc/Editor";
 
 const App = () => {
   return (
@@ -26,11 +27,11 @@ export const routerPage = createBrowserRouter([
         path: "/profile",
         element: <ProfileSetting />,
       },
+      {
+        path: "/edit",
+        element: <Editor />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <ErrorPage />,
   },
   // {
   //   path: "*",

@@ -1,4 +1,4 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./globals.css";
 import AllDocs from "./components/alldocs/AllDocs";
 import ErrorPage from "./components/common/ErrorPage";
@@ -8,42 +8,17 @@ import Editor from "./components/createdoc/Editor";
 const App = () => {
   return (
     <main>
-      <Outlet />
+      <Routes>
+        <Route index element={<AllDocs />} />
+
+        <Route path="/profile" element={<ProfileSetting/>} />
+        
+        <Route path="/edit" element={<Editor/>} />
+
+        <Route path="*" element={<ErrorPage/>} />
+      </Routes>
     </main>
   );
 };
-
-export const routerPage = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <AllDocs />,
-      },
-      {
-        path: "/profile",
-        element: <ProfileSetting />,
-      },
-      {
-        path: "/edit",
-        element: <Editor />,
-      },
-    ],
-  },
-  {
-    path: "/profile",
-    element: <ProfileSetting />,
-  },
-  {
-    path: "/edit",
-    element: <Editor />,
-  },
-  {
-    path: "*",
-    element: <ErrorPage />,
-  },
-]);
 
 export default App;

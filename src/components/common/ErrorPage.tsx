@@ -1,13 +1,13 @@
-import { Link, useRouteError } from "react-router-dom";
+import { Link } from "react-router-dom";
 import errorPage from "../../assets/errorPage.png";
 
-type errType = {
-  status: number;
-  statusText: string;
-};
+// type errType = {
+//   status: number;
+//   statusText: string;
+// };
 
 const ErrorPage = () => {
-  const error: errType = useRouteError() as errType;
+  // const error: errType = useRouteError() as errType;
 
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-violet-100 flex-col">
@@ -20,9 +20,11 @@ const ErrorPage = () => {
       </div>
       <div className="w-5/6 text-center">
         <h1 className="md:text-3xl text-2xl md:tracking-[0.5rem]  font-extrabold text-violet-700 mx-auto my-5 md:my-10">
-          {error.status
-            ? "Oops! " + error.status + " Page " + error.statusText
-            : "Ooops! 404 Page Not Found"}
+          {/* {error.status
+            ? "Oops! " + error.status + " Page " + error.statusText */}
+          {/* : " */}
+          Ooops! 404 Page Not Found
+            {/* "} */}
         </h1>
         <Link
           to="/"

@@ -33,6 +33,14 @@ export const routerPage = createBrowserRouter([
     ],
   },
   {
+    path: "/profile",
+    element: <ProfileSetting />,
+  },
+  {
+    path: "/edit",
+    element: <Editor />,
+  },
+  {
     path: "*",
     element: <ErrorPage />,
   },

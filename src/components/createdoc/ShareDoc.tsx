@@ -303,7 +303,7 @@ const ShareDoc: React.FC = () => {
                         className="flex justify-between items-center h-fit p-2 rounded-sm focus:bg-violet-200 hover:bg-violet-200">
                         <div className="text-left">
                           <div className="text-xs">
-                            <Select>
+                            <Select >
                               <SelectTrigger className="w-fit rounded-none h-fit p-1  bg-transparent border-none focus:ring-transparent  hover:bg-violet-300">
                                 <SelectValue placeholder="Anyone can with the link" />
                               </SelectTrigger>

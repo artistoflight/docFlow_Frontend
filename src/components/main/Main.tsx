@@ -170,10 +170,7 @@ const Home = () => {
               width="560"
               src="https://www.youtube.com/embed/XwpjSksb1ls?si=9tzT1h0cwBptaGBv"
               title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
         </div>
       </section>
